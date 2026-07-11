@@ -3,7 +3,7 @@ import tiktoken
 encoder = tiktoken.encoding_for_model('gpt-4o')
 print(encoder.n_vocab)
 
-txt = "The cat sat on the mat"
+txt = "the cat sat on the mat"
 tokens = encoder.encode(txt)
 print(tokens)   
 
@@ -44,6 +44,12 @@ Interesting Observation:
 
     However, carefully filtered and high-quality synthetic data can
     improve models and is already used successfully by leading AI labs.
+
+Some Types of models (Prompt-Engineering):
+    -> Chain of Thought.
+    -> Self-Consistency.
+    -> Persona-Based.
+    -> Role-Playing.
 
 """
 
